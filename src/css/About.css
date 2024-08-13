@@ -1,0 +1,167 @@
+/* ------- */
+/* About Me CSS */
+
+.img-container {
+  height: 100%;
+  margin-left: 14%;
+  margin-right: 22%;
+  margin-bottom: 14%;
+}
+
+.about-mkImg {
+  width: 100%;
+  height: 100%;
+}
+
+.outer-circle {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+
+.inner-circle {
+  width: 92%;
+  height: 94%;
+  position: absolute;
+  background: black;
+  margin: 4%;
+  z-index: 9;
+}
+
+.outer-circle span {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+
+.outer-circle span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.outer-circle span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.outer-circle span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.outer-circle span:nth-child(4) {
+  filter: blur(150px);
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* For Responsiveness */
+
+@media (768px <= width <= 1300px) {
+  .img-container {
+    width: 70%;
+    height: 100%;
+  }
+  .outer-circle {
+    width: 100%;
+    height: 20vw;
+  }
+  .inner-circle {
+    width: 90%;
+    height: 93%;
+  }
+}
+
+@media (100px <= width <= 550px) {
+  .img-container {
+    width: 60%;
+    height: 100%;
+  }
+  .outer-circle {
+    width: 100%;
+    height: 40vw;
+  }
+  .inner-circle {
+    width: 92%;
+    height: 93%;
+  }
+}
+
+/* About-Us Page CSS */
+
+.about-section {
+  position: relative !important;
+  padding-top: 6vw !important;
+  padding-bottom: 3vw !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+.quote-card-view {
+  border: none !important;
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  margin-left: 50px !important;
+  font-size: larger;
+}
+
+.about-section li {
+  margin: 14px;
+}
+
+@media (width<= 1000px) {
+  .about-section {
+    padding-top: 20vw !important;
+    padding-bottom: 3vw !important;
+  }
+
+  .about-activity {
+    margin-left: 0.1% !important;
+    font-size: medium;
+  }
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.achievements-container img {
+  max-width: 80%;
+}
+
+@media (max-width: 1000px) {
+  .achievements-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .achievements-container img {
+    max-width: 80%;
+  }
+}

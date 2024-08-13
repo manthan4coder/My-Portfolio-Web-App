@@ -1,0 +1,30 @@
+/* Contact Me section */
+/* --------- */
+
+.contact-section {
+  position: relative !important;
+  padding-top: 120px !important;
+  color: white !important;
+}
+
+.img-contact {
+  position: relative;
+}
+
+.contact-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../assets//bg/skills-bg2.jpg");
+  border-radius: 15%;
+}
+
+@media (width <= 700px) {
+  .contact-img {
+    width: 250px;
+  }
+
+  .img-contact {
+    margin-bottom: 25%;
+  }
+}
