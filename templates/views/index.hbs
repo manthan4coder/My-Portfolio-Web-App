@@ -1,0 +1,69 @@
+{{>header}}
+
+<body>
+  <header>
+    {{>heading}}
+
+    <form action="/register" method="post">
+
+      <div>
+        <label class="form-label" for="form3Example1cg">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          id="form3Example1cg"
+          placeholder="Enter your Name"
+          autocomplete="off"
+          {{!-- required --}}
+        />
+      </div>
+
+      <div>
+        <label class="form-label" for="form3Example3cg">Your Email</label>
+        <input
+          type="text"
+          name="email"
+          id="form3Example3cg"
+          placeholder="Enter your Email"
+          autocomplete="off"
+          {{!-- required --}}
+        />
+      </div>
+
+      <div>
+        <label class="form-label" for="form3Example4cg">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="form3Example4cg"
+          placeholder="Enter your Password"
+          autocomplete="off"
+          {{!-- required --}}
+        />
+      </div>
+
+      <div>
+        <label class="form-label" for="form3Example4cdg">Confirm your password</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="form3Example4cdg"
+          placeholder="Confirm your Password"
+          autocomplete="off"
+          {{!-- required --}}
+        />
+      </div>
+
+      <div>
+        <button
+          type="submit"
+          value="register"
+        >Register</button>
+      </div>
+
+    </form>
+
+  </header>
+</body>
+
+{{>footer}}
